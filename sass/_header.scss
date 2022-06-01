@@ -1,0 +1,40 @@
+.header {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-auth {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        //gap: 0 30px;
+        text-transform: capitalize;
+    }
+
+    &-signin {
+        color: $heading-color;
+        margin-right: 30px;
+    }
+
+    &-signup {
+        color: $primary-color;
+        padding: 13px 45px;
+        border-radius: 50px;
+        border: 1px solid;
+    }
+}
+
+// responsive
+@media (max-width: 1023px) {
+    .header {
+        padding: 25px 0 25px;
+    }
+
+    .header-auth {
+        display: none;
+    }
+}

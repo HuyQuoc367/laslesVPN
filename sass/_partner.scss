@@ -1,0 +1,20 @@
+.partner {
+    margin-bottom: 50px;
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+// responsive
+
+@media (max-width: 1023px) {
+    .partner {
+        margin-bottom: 20px;
+    }
+
+    .partner-container {
+        gap: 0 20px;
+    }
+}

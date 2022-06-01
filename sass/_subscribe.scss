@@ -1,0 +1,30 @@
+.subscribe {
+    padding-bottom: 10px;
+    &-container {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 33px 114px 0 rgba(#0D1025, 0.06);
+    }
+    
+    &-content {
+        max-width: 372px;
+    }
+}
+
+// responsive 
+@media (min-width: 1024px) {
+    .subscribe-container {
+        padding: 58px 70px;
+    }
+}
+
+@media (max-width: 767px) {
+    .subscribe-container {
+        flex-direction: column;
+        gap: 20px 0;
+    }
+}
